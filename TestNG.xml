@@ -1,0 +1,84 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestSuite" parallel="none">
+    <!--<test name="IETestCases">
+        <parameter name="browser" value="ie"/>
+
+        <groups>
+            <run>
+                <exclude name="ie"/>
+                <include name="admin"/>
+                <include name="user"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.romanceabroad.ui.SearchPageTests"/>
+            <class name="com.romanceabroad.ui.BlogPageTests"/>
+            <class name="com.romanceabroad.ui.BookTourTests"/>
+            <class name="com.romanceabroad.ui.ContentPageTests"/>
+            <class name="com.romanceabroad.ui.MainPage"/>
+            <class name="com.romanceabroad.ui.MediaPageTests"/>
+            <class name="com.romanceabroad.ui.RegistrationTests"/>
+            <class name="com.romanceabroad.ui.RegistrationTests2"/>
+            <class name="com.romanceabroad.ui.SearchPageTests"/>
+            <class name="com.romanceabroad.ui.StorePageTests">
+                <methods>
+                    <include name=".*TestCase11.*"/>
+                    <include name=".*Assert.*"/>
+                    <exclude name=".*List.*"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="FirefoxTestCases">
+        <parameter name="browser" value="firefox"/>
+        <groups>
+            <run>
+                <exclude name="ie"/>
+                <include name="admin"/>
+                <include name="user"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.romanceabroad.ui.SearchPageTests"/>
+            <class name="com.romanceabroad.ui.BlogPageTests"/>
+            <class name="com.romanceabroad.ui.BookTourTests"/>
+            <class name="com.romanceabroad.ui.ContentPageTests"/>
+            <class name="com.romanceabroad.ui.MainPage"/>
+            <class name="com.romanceabroad.ui.MediaPageTests"/>
+            <class name="com.romanceabroad.ui.RegistrationTests"/>
+            <class name="com.romanceabroad.ui.RegistrationTests2"/>
+            <class name="com.romanceabroad.ui.SearchPageTests"/>
+            <class name="com.romanceabroad.ui.StorePageTests">
+        </classes>
+    </test>-->
+    <test name="ChromeTestCases">
+        <parameter name="browser" value="chrome"/>
+
+        <!--<groups>
+            <run>
+                <exclude name="ie"/>
+                <include name="admin"/>
+                <include name="user"/>
+            </run>
+        </groups>-->
+
+        <classes>
+            <class name="com.romanceabroad.ui.SearchPageTests"/>
+            <class name="com.romanceabroad.ui.BlogPageTests"/>
+            <class name="com.romanceabroad.ui.BookTourTests"/>
+            <class name="com.romanceabroad.ui.ContentPageTests"/>
+            <class name="com.romanceabroad.ui.MainPage">
+            <!--<class name="com.romanceabroad.ui.MediaPageTests"/>
+            <class name="com.romanceabroad.ui.RegistrationTests"/>
+            <class name="com.romanceabroad.ui.RegistrationTests2"/>
+            <class name="com.romanceabroad.ui.SearchPageTests"/>
+            <class name="com.romanceabroad.ui.StorePageTests">-->
+            <!--<methods>
+                <include name=".*TestCase11.*"/>
+                <include name=".*Assert.*"/>
+                <exclude name=".*List.*"/>
+            </methods>-->
+            </class>
+        </classes>
+    </test>
+</suite>

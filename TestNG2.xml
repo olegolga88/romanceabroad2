@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name="TestSuite" parallel="none"  >
+
+    <test name="FirefoxTestCases">
+        <parameter name="browser" value="firefox"/>
+
+        <classes>
+
+            <class name="com.romanceabroad.ui.RegistrationTests2"/>
+        </classes>
+    </test>
+
+    <test name="ChromeTestCases">
+        <parameter name="browser" value="chrome"/>
+
+
+        <classes>
+
+            <class name="com.romanceabroad.ui.RegistrationTests2"/>
+
+
+        </classes>
+    </test>
+    <!--<test name="IeTestCases">
+        <parameter name="browser" value="ie"/>
+
+        <classes>
+
+            <class name="com.romanceabroad.ui.RegistrationTests2"/>
+
+        </classes>
+    </test>-->
+</suite>
